@@ -1,7 +1,7 @@
 # profile
 technology roadmap for 10 years
 
-#CG
+# CG
 ## EntityEditor  
 parametric modeling for geometry,path animation and special effects
 key point:this project framework used Qt Creater architecture and just added what we needed.
