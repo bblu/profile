@@ -5,4 +5,15 @@ debug.log
 node_modules/
 public/
 .deploy/
-themes/
+*.sublime-project
+*.sublime-workspace
+.jekyll-metadata
+.sass-cache
+_asset_bundler_cache
+_site
+codekit-config.json
+npm-debug.log*
+vendor/*
+
+_drafts
+trash
