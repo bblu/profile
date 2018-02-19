@@ -27,6 +27,7 @@ zhihu_username:
 # use Github Flavored Markdown !important  
 # document: http://jekyllrb.com/docs/configuration/#kramdown  
 markdown: kramdown
+remote_theme: litten/hexo-theme-yilia
 highlighter: rouge
 permalink: pretty
 paginate: 8
