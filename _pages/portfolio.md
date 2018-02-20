@@ -26,7 +26,7 @@ feature_row:
     alt: "game for kids"
     title: "Learn words"
     excerpt: "support mousewheel and keys with sound and image by game"
-    url: "/2016-04-06-kids_char.html"
+    url: "/hobby/kids-letter-game.html"
   - image_path: ../assets/in-post/2016-12-13-proj-ortho.png
     alt: "algorithm in python"
     title: "Ortho Projection"
