@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "bblu's Blog"
 title_separator          : "-"
 name                     : "bblu"
-description              : "Just do it!"
+description              : "Just do IT!"
 url                      : # "https://hijiangtao.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "bblu/bblu.github.io"
@@ -170,7 +170,7 @@ kramdown:
 
 
 # Outputting
-permalink: :category/:title.html
+permalink: :categories/:title.html
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

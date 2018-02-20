@@ -14,7 +14,7 @@ intro:
 feature_row:
   - image_path: ../assets/in-post/2016-04-06-kids_char.jpg
     alt: "game for kids"
-    title: "Kid learn words by letter"
+    title: "Learn words by letter"
     excerpt: "support mousewheel and keys with sound and image by game"
     url: "/2016-04-06-kids_char.html"
   - image_path: ../assets/in-post/2016-12-13-pyprj1.jpg
