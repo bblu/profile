@@ -1,5 +1,5 @@
 ---
-title: libcurl-lnk2001-error
+title: libcurl error LNK2001
 date: 2010-04-03 07:00:13
 categories: blog
 tags: [curl,error]

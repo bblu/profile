@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "bblu's Blog"
+title                    : "bblu's blog"
 title_separator          : "-"
 name                     : "bblu"
-description              : "Just do IT!"
+description              : "Just do IT"
 url                      : # "https://hijiangtao.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "bblu/bblu.github.io"
@@ -84,7 +84,7 @@ analytics:
 # Site Author
 author:
   name             : "bblu"
-  avatar           : "bio-photo.PNG"
+  avatar           : "bio-photo.png"
   bio              : "Just do it"
   location         : "Beijing, China"
   email            : "gmwblu@gmail.com"
