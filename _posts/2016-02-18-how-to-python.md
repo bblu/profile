@@ -2,7 +2,7 @@
 title: how to python
 date: 2016-02-18 16:12:57
 categories: blog
-tags: [pythona,algorithm]
+tags: [python,algorithm]
 ---
 
 ## base  

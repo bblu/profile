@@ -2,7 +2,7 @@
 title: sample code of books
 date: 2016-04-13
 categories: blog
-tags: [book,cpp]
+tags: [book,c++]
 ---
 typed sample code from book  
 读书随手敲的代码和一些测试，差不多是我这几年的书单.

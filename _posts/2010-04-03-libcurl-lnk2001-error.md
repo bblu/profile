@@ -2,7 +2,7 @@
 title: libcurl error LNK2001
 date: 2010-04-03 07:00:13
 categories: blog
-tags: [curl,error]
+tags: [curl,IDE]
 ---
 在使用libcurl的时候出现一个很普遍unresolved external symbol
 

@@ -2,40 +2,17 @@
 title: Hello World 2018
 date: 2018-02-18 16:12:57
 categories: blog
-tags: 
+tags: [blog]
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+虽然我职业生涯的基本都在三维引擎相关工作上，简历上也这么写但是对于渲染管线的细节像shader了解的不多，由于红宝书看了很多遍固定管线的渲染流程还是烂熟于心的。底层工作做的不多用billboard实现一个粒子系统，优化场景操控器解析几何和四元数解算相机位置点这些都算很底层了，主要工作是设计开发一些参数化建模工具，配合模型节点实现路径动画和简单的骨骼动画，投影变换、栅格数据切片和矢量数据处理，数据库ORM。渲染引擎起先是DX，有了osg后大家都转到opengl后来追求各种特效又回到的DX，一个很大的原因是计算机硬件技术那几年突飞猛进，各种什么实时阴影、碰撞检测、布料动画这些特效都变成标配了，再加上四叉树八叉树多场景管理和动态调度GIS大场景应用也可以流畅的运行了。
 
-### Create a new post
+上面说的写三维引擎当然不是从零开始DIY，其实大家都差不多参考各种开源闭源的引擎然后定制自己的需求，所以我最大的特长是整合和迁移的能力。最成功的一次整合应用是参考qt designer的设计整合公司的三维引擎实现实体编辑器，参考qt creater多架构整合脚本引擎实现场景动画编辑器的项目，接触过基于HLA的RTI仿真平台的人对这个实体应该会有更好的理解。整合现有应用最大的优势是大大缩短了开发周期，并且交付的程序也很健壮。
 
-``` bash
-$ hexo new "My New Post"
-```
+我毕业的时候GIS本身就是一个热炒的领域，当时3s和4d还是比较的炫酷的，随着时代的发展对新潮的词汇的需求与日俱增，许多新词脱引而出，从数字城市到智慧地球不一而足，数据领域也未能幸免。数据是所有系统的本源，谈gis系统必谈大数据，当然那个时候不叫大数据叫海量数据，先是数据库然后是分布式随着数据存储和处理的方式不断演进，最后飘到天上去了叫云存储。伴随云存储又出来个云服务。
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+其实webGL出现前网页三维应用的需求一直存在，这里要感谢微软的COM技术和ATL库，因为activeX控件给了公司许多赚钱的机会。封装成activeX后osg也可以批上IE的外衣，当然如果能满足需求用Irrlicht封装的话罪恶感会少很多。javascript慢慢发展然后webGL横空出世，伴随者许多出色的引擎我们当然没有理由拒绝nodejs。于是又加入了新的web技术栈，之所以说又是因为我毕业设计用的是asp做的油田管线管理系统，每个指导老师可以提名两个优秀毕业设计我是其中一个。又进来之后js全面的环境支持相对于四剑客网站开发时代的感觉就好像是刷路由器有了root权限想干嘛就干嘛，jQuery、Angular、react和vue虚DOM和双向数据绑定感觉眼花缭乱，那句话还是很有道理的计算机领域没有什么问题不是可以通过加入一层来解决的，如果有那就再加一层。好在后端相对安分一些，老老实实用Express就能搞定大部分的需求。
 
-### Run server
+工作中烦心的几件事：第一个就是方法体内的代码注释，好代码是自解释的只要把该抽出的函数抽出来，起一个词能意会的名字，自然就能看明白了。代码检查最怕遇到的就是汉语简拼的数据库字段名和用翻译软件翻出的一个非常生僻的词，查完也不舒服。第二个就是给团队讲产品设计时大家都听懂了，我的经验是如果你不每一个人去跟的话基本做出的东西不可能按照设计走，反正我呆过的公司是没有时间把设计落实到伪代码这个层次的，听懂了的意思很多时候是不知道自己哪里不懂。第三个就是敏捷不是银弹，敏捷开发只适合的是成员敏捷的团队，如果一个功能要半个月才能出来还是慢慢来更好。
 
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+2018不管我愿意与否迎来了我多35岁，即使保守的说35岁算一个程序员多中年了吧。虽然当初入行是勉强进入一所211大学然后被调剂到了一个没听说的GIS专业，但是这么多年过去了我在骨子里还是对编程有着深深的热爱，希望我能当一辈子程序员，退休以后做点木工活捣鼓点智能家居的小玩意就好。

@@ -2,7 +2,7 @@
 title: windows下txt文本合并
 date: 2007-09-17 16:12:57
 categories: blog
-tags: [windows,shell]
+tags: [windows,shell,devops]
 --- 
 
 file.bat:  dir *.txt >>list.txt

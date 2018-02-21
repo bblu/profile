@@ -2,7 +2,7 @@
 title: gdal c#接口库的编译
 date: 2008-11-13 23:34:46
 categories: blog
-tags: [gdal,C#]
+tags: [gdal,cg]
 ---  
 GDAL是一个操作各种栅格地理数据格式的库。
 包括读取、写入、转换、处理各种栅格数据格式（有些特定的格式对写入等不支持）。

@@ -2,7 +2,7 @@
 title: nodejs任务流转管理设计
 date: 2017-04-22
 categories: web
-tags: [nodejs,express,mongodb,handlebars]
+tags: [express,mongodb]
 ---
 express采用handlebars渲染，附加数据库设计。
 

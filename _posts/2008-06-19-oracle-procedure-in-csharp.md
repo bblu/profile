@@ -2,7 +2,7 @@
 title: c#调用oracle存储过程返回结果集
 date: 2008-06-19 13:49:51
 categories: database
-tags: [oracle,C#]
+tags: [procedure,oracle]
 --- 
 
 首先在ORACLE建立PACKAGE和PACKAGE BODY，将在这里面定义函数和存储过程返回结果集。 

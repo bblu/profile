@@ -2,7 +2,7 @@
 title: leetcode algorithm in c++
 date: 2016-05-06
 categories: algorithm
-tags: [cpp,leetcode]
+tags: [c++,leetcode]
 ---
 > algorithm from leetcode and book
 

@@ -1,41 +1,15 @@
 ---
-title: Hello World
-date: 2018-02-18 16:12:57
-categories: blog
-tags: 
+title: 树莓派GPIO编程实践
+date: 2016-10-28 23:12:57
+categories: hobby
+tags: [raspberrypi,gpio]
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## basic
+GPIO编程入门，控制数码管，步进电机和三八译码器控制LED。
 
-### Create a new post
+## midi
+DIY电子琴教学提示LED灯
 
-``` bash
-$ hexo new "My New Post"
-```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+view code: [github](https://github.com/bblu/raspberrypi)

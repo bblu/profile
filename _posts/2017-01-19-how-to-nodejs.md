@@ -2,7 +2,7 @@
 title: how to nodejs
 date: 2017-01-19
 categories: blog
-tags: [nodejs]
+tags: [nodejs,book]
 ---
 
 ## chatroom
