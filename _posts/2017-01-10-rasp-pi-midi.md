@@ -1,7 +1,7 @@
 ---
 title: DIY电子琴教学提示灯
 date: 2017-01-10 23:12:57
-categories: hobby
+categories: arm
 tags: [raspberrypi,gpio,python]
 ---
 

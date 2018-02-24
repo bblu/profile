@@ -1,8 +1,8 @@
 ---
 title: visualstudio 常用项目路径配置
 date: 2009-12-18
-categories: blog
-tags: [IDE,.net,devops]
+categories: devops
+tags: [.net,devops]
 ---
 
 $(ConfigurationName) 当前项目配置的名称（例如“Debug”）。

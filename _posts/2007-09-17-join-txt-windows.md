@@ -1,7 +1,7 @@
 ---
 title: windows下txt文本合并
 date: 2007-09-17 16:12:57
-categories: blog
+categories: devops
 tags: [windows,shell,devops]
 --- 
 

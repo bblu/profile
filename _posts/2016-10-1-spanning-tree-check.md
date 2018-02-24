@@ -2,7 +2,7 @@
 title: 管网生成树的合法检查
 date: 2016-10-1 16:12:57
 categories: blog
-tags: [algorithm]
+tags: [algorithm,tree]
 ---
 
 检查从autoCAD导出的管线链接的合法性，判断每个节点的分支情况，防止有悬空的情况发生。

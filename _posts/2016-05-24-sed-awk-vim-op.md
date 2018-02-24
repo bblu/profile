@@ -1,7 +1,7 @@
 ---
 title: sed awk and vim 
 date: 2016-05-24
-categories: blog
+categories: devops
 tags: [shell, devops]
 ---
 工作和使用shell过程中一些常用的操作备忘

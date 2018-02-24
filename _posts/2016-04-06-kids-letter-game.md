@@ -1,7 +1,7 @@
 ---
 title: Letters game for kids
 date: 2016-04-06 16:12:57
-categories: hobby
+categories: blog
 tags: [game,python]
 ---
 ## kid-pygame  

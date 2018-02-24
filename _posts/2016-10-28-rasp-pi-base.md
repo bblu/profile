@@ -1,7 +1,7 @@
 ---
 title: 树莓派GPIO编程实践
 date: 2016-10-28 23:12:57
-categories: hobby
+categories: arm
 tags: [raspberrypi,gpio]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Android Medical App
 date: 2017-01-17
-categories: hobby
+categories: arm
 tags: [android]
 ---
 

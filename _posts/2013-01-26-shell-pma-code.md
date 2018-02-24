@@ -1,7 +1,7 @@
 ---
 title: Code Measurement & Analysis for SVN
 date: 2013-01-26
-categories: blog
+categories: devops
 tags: [devops,shell,python]
 ---
 > 对svn管理代码的所有项目的代码提交情况进行分析，采集每个产品，每个开发者，每个任务的代码变动情况提交到mysql数据库，信息提取有python脚本实现。

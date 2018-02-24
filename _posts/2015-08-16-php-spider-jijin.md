@@ -1,7 +1,7 @@
 ---
 title: php网络小爬虫
 date: 2015-08-16
-categories: hobby
+categories: web
 tags: [spider, php, mysql]
 ---
 

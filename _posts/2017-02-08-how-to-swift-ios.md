@@ -1,7 +1,7 @@
 ---
 title: how to swift
 date: 2017-02-08 22:12:57
-categories: hobby
+categories: arm
 tags: [ios,swift,coursera]
 ---
 > coursera IOS 开发入门和给孩子开发的小程序

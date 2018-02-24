@@ -2,7 +2,7 @@
 title: autolisp export objects
 date: 2016-11-29
 categories: blog
-tags: [autocad,lisp,data]
+tags: [autocad,lisp]
 ---
 
 lisp for autocad to export polyline，text and block
