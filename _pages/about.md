@@ -30,4 +30,4 @@ technology roadmap for 10 years
 - [LeetCode](http://bblu.tk/2016-05-06-leetcode-in-cpp.html)：两年前刷leetcode的成果（c++）。
 
 # 软件设计师资格证书
->2016年在淘宝花11块钱买了本参考书，把习题看了两遍去考试然后就通过了。
+> 2016年在淘宝花11块钱买了本参考书，把习题看了两遍去考试然后就通过了。
