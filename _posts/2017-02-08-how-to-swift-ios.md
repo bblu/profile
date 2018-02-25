@@ -12,6 +12,8 @@ tags: [ios,swift,coursera]
 ## earth
 使用senceKit给孩子做的一个地球仪，画了一个球贴了一张图。
 
+![earth](../assets/in-post/2017-06-23-swft-ios-earth.png)
+
 ## myday
 用了许多时间管理软件都不太适合，要给自己做一个每日计划和时间管理的app。
 flag：还是要做的。

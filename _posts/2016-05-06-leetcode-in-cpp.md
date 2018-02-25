@@ -17,10 +17,10 @@ tags: [c++,leetcode]
 * zipchar 压缩相连相同字符串的算法好像是leetcode的题目
 
 ## cluster
-* 用make编译kmeans算法
+* 用make编译kmeans聚类算法
 
 ## leetcode
-都是挑简单的开始做的[[也要试试](https://leetcode.com/problemset/all/)]
+都是挑简单的开始做的，后来也没选太难的。有兴趣[[也来试试](https://leetcode.com/problemset/all/)]
 
 ``` bash
 add2numbers.cpp	Create add2numbers.cpp	2 years ago
@@ -80,6 +80,8 @@ return all possible combinations of k numbers out of 1 ... n.
 ```
 
 ## puzzle  
+>这个是比较有难度的！
+
 * waterbucket 不同容积的杯子量一定量水的算法
 
 ## stl 

@@ -1,9 +1,10 @@
 ---
 title: Letters game for kids
-date: 2016-04-06 16:12:57
+date: 2016-04-06
 categories: blog
 tags: [game,python]
 ---
+
 ## kid-pygame  
 learn words form charactors for kids with picture and sound effect
 

@@ -1,7 +1,7 @@
 ---
 title: how to python
 date: 2016-02-18 16:12:57
-categories: blog
+categories: algorithm
 tags: [python,algorithm]
 ---
 
@@ -27,7 +27,8 @@ excel->pg
 学习Python语言，敲的示例代码。
 
 ## MLinaction
-学习《机器学习实践》第二章数字识别敲的代码
+学习《机器学习实践》第二章数字识别敲的代码,
+> 这本书难度比较搭不适合像我这样的初学者。
 
 ## network
 网络读取小测试

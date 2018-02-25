@@ -169,8 +169,8 @@ kramdown:
   enable_coderay: false
 
 
-# Outputting
-permalink: :categories/:title.html
+# Outputting :categories/
+permalink: :year-:month-:day-:title.html
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

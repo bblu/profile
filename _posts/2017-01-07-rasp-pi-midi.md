@@ -1,6 +1,6 @@
 ---
 title: DIY电子琴教学提示灯
-date: 2017-01-10 23:12:57
+date: 2017-01-07
 categories: arm
 tags: [raspberrypi,gpio,python]
 ---
@@ -11,5 +11,7 @@ python的库简直就是一个宝库，想用的工具都能找到，这里要�
 
 midi库已经能将音符解析出来编码用程序就能实现，解码级联了三片三八译码器，应付普通的儿歌完全没有问题。
 
+![74xx image](../assets/in-post/2017-01-07-rasp-pi-74xx.png)
+
 ## Quick Start
-view code and picture: [midi](https://github.com/bblu/raspberrypi/tree/master/midi)
+view code: [github](https://github.com/bblu/raspberrypi/tree/master/midi)

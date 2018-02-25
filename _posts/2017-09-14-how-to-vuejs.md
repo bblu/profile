@@ -42,3 +42,5 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 ## stuff
 从maptest分离出来的单独的负责用户登录认证的服务，放到一起依赖太多不方便部署和测试。
+
+Code at [github](https://github.com/bblu/vuejs)
