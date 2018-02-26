@@ -7,13 +7,11 @@ tags: [python,web]
 
 uWSGI是一个Web服务器，它实现了WSGI协议(Web Server Gateway Interface)、uwsgi、http等协议。Nginx中HttpUwsgiModule的作用是与uWSGI服务器进行交换。
 
-要注意 WSGI / uwsgi / uWSGI 这三个概念的区分。
+*** 要注意 WSGI / uwsgi / uWSGI 这三个概念的区分 ***
 
-- WSGI是一种编程接口,它适用于 Python 语言,定义了 web服务器和 web应用之间的接口规范。
-- uwsgi是一种传输协议，在此常用于在uWSGI服务器与其他网络服务器的数据通信。
-- 而uWSGI是实现了uwsgi和WSGI两种协议的Web服务器。
-
-> uwsgi协议是一个uWSGI服务器自有的协议，它用于定义传输信息的类型（type of information），每一个uwsgi packet前4byte为传输信息类型描述，它与WSGI相比是两样东西。
+- WSGI是一种编程接口,它适用于 Python 语言,定义了 web服务器和 web应用之间的接口规范。当前运行在WSGI协议之上的web框架有Bottle, Flask, Django。
+- uwsgi是一种传输协议，在此常用于在uWSGI服务器与其他网络服务器的数据通信,是uWSGI服务器的独占协议，用于定义传输信息的类型(type of information)，每一个uwsgi packet前4byte为传输信息类型的描述，与WSGI协议是两种东西，据说该协议是fcgi协议的10倍快。。
+- uWSGI是一个web服务器，实现了WSGI协议、uwsgi协议、http协议等。
 
 【[知乎-灵剑](https://www.zhihu.com/question/46945479/answer/104066078)】:
 WSGI是一种编程接口，而uwsgi是一种传输协议，从作用上来讲，的确跟fastcgi是最接近的。跟fastcgi的区别在于它是面向多并发的。我们知道fastcgi是CGI的替代品，它的工作方式仍然跟CGI是类似的，当一个请求进入的时候，通过socket发送请求的环境变量，然后发送POST数据（相当于CGI的stdin），然后等待程序输出（相当于CGI的stdout），等输出结束后，再发送下一个请求。这就导致fastcgi最大的并发量被限制为fastcgi后端的数量，显然这样的服务器模式对于并发量很大、单个请求耗时比较长的服务是不合适的，因此很多时候我们不愿意使用fastcgi部属而是使用反向代理的方式配置。但是跟反向代理比起来，fastcgi显然也是有好处的，最重要的好处在于解析HTTP协议的部分被offload到了前端服务器一级，后端服务器不再解析HTTP协议，这样就减轻了后端的压力，由于前端是nginx这样用C/C++高性能实现的服务器，比起在后端的Python当中使用脚本语言解析HTTP协议，效率要高不少。uwsgi想要继承fastcgi的这种好处，它通过将消息分片的方式，可以在一个socket上并发传输多个请求，这样就解决了一个连接上一次只能传输一个请求的问题。熟悉HTTP2.0的话会发现这个分片机制跟HTTP2.0很像。
