@@ -1,5 +1,5 @@
 ---
-title: ios开发timepi第1天-知识准备和设计
+title: ios开发TimePie第1天-知识准备和设计
 date: 2018-03-09
 categories: blog
 tags: [ios,swift]

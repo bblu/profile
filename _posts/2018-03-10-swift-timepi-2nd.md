@@ -1,5 +1,5 @@
 ---
-title: ios开发timepi第2天-解析json添加按钮
+title: ios开发TimePie第2天-解析json添加按钮
 date: 2018-03-09
 categories: blog
 tags: [ios,swift]
