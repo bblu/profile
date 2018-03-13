@@ -1,5 +1,5 @@
 ---
-title: ios开发timepi第3天-添加UIPickerView
+title: ios开发TimePie第3天-添加UIPickerView
 date: 2018-03-11
 categories: blog
 tags: [ios,swift]
