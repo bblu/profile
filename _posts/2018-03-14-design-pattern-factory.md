@@ -1,5 +1,5 @@
 ---
-title: 一句话介绍设计模式-工厂模式
+title: 简介设计模式-工厂模式
 date: 2018-03-14 0:20
 categories: blog
 tags: [design]

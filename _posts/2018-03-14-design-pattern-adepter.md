@@ -1,5 +1,5 @@
 ---
-title: 一句话介绍设计模式-适配器模式
+title: 简介设计模式-适配器模式
 date: 2018-03-14 1:17
 categories: blog
 tags: [design]
