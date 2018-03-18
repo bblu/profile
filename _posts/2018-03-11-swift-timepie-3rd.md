@@ -8,7 +8,7 @@ tags: [ios,swift]
 > 解析json初始化pickerview选择todo事项，一开始想把Picker的Datasource和Delegate独立出去，互相操作起来太复杂先放弃了以后再说吧。
 
 ### 常用的操作
-- 重构： Command + clike 可以调出选项转到定义
+- 重构： Command + click 可以调出选项转到定义
 - 查找： Command + F
 - 替换： Command + Option+F
 
