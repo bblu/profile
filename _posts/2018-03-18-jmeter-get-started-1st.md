@@ -7,7 +7,7 @@ tags: [test,jmeter]
 
 >  Apache JMeter 一个测试web功能和性能的开源Java软件，对java框架和协议支持良好，基本上应用协议都能测试。
 
-先上图安装完后长这个样子，大体看了这货一下我的感想是这个东西是纯程序员思维的产品，肯定没有和测试商量去问他们的需求就开发出来的东西，这种产品会越来越多的。
+先上图安装完后长这个样子，看了一下这货我的感想是这个东西是纯程序员思维的产品，肯定没有和测试商量去问他们的需求就开发出来的东西，随着开发向运维和测试侵入的大趋势以后这种程序友好产品会越来越多的，GUI的工作原理相当于把测试程序编排可视化，当然也可以直接写程序啦。
 
 ![JmeterMainView](../assets/in-post/2018-03-18-jmeter-get-started-1.png)
 
@@ -29,7 +29,7 @@ tags: [test,jmeter]
 JMeter的TestPlan对应的应该是TestSuit，它下面节点的介绍，注意的是这些不同类型的节点可以互相嵌套的。
 
 - Thread group： the beginning points of any test plan. 
-- Controller：控制器节点可以组合嵌套实现流程控制像程序语言到控制语句
+- Controller：控制器节点可以组合嵌套实现流程控制像程序语言到控制语句，有下面三种类型。
 - Samplers:功能和它名字一样触发服务测试
 - LogicControllers:逻辑控制比如对应登录操作只执行一遍
 - TestFraments：当前TreadGroup的别名供其他group引用做到复用的特殊控制节点

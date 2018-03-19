@@ -1,11 +1,11 @@
 ---
 title: ios开发TimePie第4天-数据入Sqlite库
-date: 2018-03-18
+date: 2018-03-18 11:22
 categories: blog
 tags: [ios,swift]
 ---
 
->  一个程序最有价值的就是数据了，todo是一个高度结构化的数据放到sqlite是最合适不过的了，以后往android上移植也很方便，搜索了几个包装Sqlite的库都比较恐怖比如Sqlite.swift，介于这个应用的数据逻辑很简单就自己封装了一下sqlite的操作。
+>  一个程序最有价值的就是数据了，todo是一个高度结构化的数据放到sqlite是最合适不过的了，以后往android上移植也很方便，搜索了几个包装Sqlite的库都比较恐怖比如Sqlite.swift，介于这个应用的数据逻辑很简单就自己封装了一下sqlite的操作，这里又一个小trick就是选择不同的todo切换。
 
 ### 引用依赖库
 在项目 General/Linked Frameworks and Libraries/+ 添加libSqlite3.tbd
