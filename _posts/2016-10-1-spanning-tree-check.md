@@ -1,5 +1,5 @@
 ---
-title: 管网生成树的合法检查
+title: 生成树算法检查管网拓扑关系
 date: 2016-10-1 16:12:57
 categories: blog
 tags: [algorithm,tree]
