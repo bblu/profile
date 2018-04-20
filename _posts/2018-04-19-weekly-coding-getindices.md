@@ -5,7 +5,7 @@ categories: blog
 tags: [algorithm]
 ---
 
-> 每周一练-计算目标索引。假设给定数组中的两个元素和等于给定值计算这个索引。这道题坑最多等就是C++的了：数组参数传值拷贝，数组长度，返回数组总之是后背发凉。
+> 每周一练-计算目标索引。假设给定数组中的两个元素和等于给定值计算这个索引。这道题坑最多等就是C++的了：数组参数传值拷贝，数组长度，返回数组总之是后背发凉。（这个每周一练一开始计划叫每日一练的，当mkdir的时候本着从实际的原则改成了weeklypractice）
 
 ## C++
 ```cpp
@@ -26,19 +26,47 @@ class Solution{
             }
         }
     }
+    //bblu @ 2018-04-20
+    void getIndicesByTarget2(int* num,int len,int tar,int (&indices)[2]){
+        if ( len < 2) return;
+        if (len ==2 && num[0]+num[1]==tar){
+            indices[0] = 0;
+            indices[1] = 1;
+            return;
+        }
+        
+        for(int i = 0; i < len-1; i++){
+            int tmp = -1;
+            for(int j = i; j < len; j++){
+                if (tmp < 0 && num[j] < tar){
+                    indices[0] = i + j;
+                    tmp = tar - num[j];
+                }else if(tmp == num[j]){
+                    indices[1] = i + j;
+                    return;
+                }
+            }
+        }
+    }
 };
 
 int main(){
-    int num[5] = {2,10,7,5,8};
+    int num[6] = {1,2,10,7,5,8};
     int len = sizeof(num)/sizeof(num[0]);
     int tar = 7;
     int indices[2] = {-1,-1};
-    Solution *sol = new Solution();
-    sol->getIndicesByTarget(num, len, tar, indices);
+    Solution sol;
+    sol.getIndicesByTarget(num, len, tar, indices);
     if (indices[1] > 0){
         printf("get indices[%d,%d] of number array.\n",indices[0],indices[1]);
     }else{
         printf("sorry world!");
+    }
+    sol.getIndicesByTarget2(num, len, tar, indices);
+    if (indices[1] > 0){
+        printf("get indices[%d,%d] of number array.\n",indices[0],indices[1]);
+    }else{
+        printf("sorry world again!");
     }
     return 0;
 }
@@ -60,15 +88,37 @@ class Solution:
                 indices.append(i)
                 return indices
 
+    #bblu @ 2018-04-20
+    def getIndicesByTarget2(self,nums,tar):
+        for base in range(0,len(nums)):
+            p0,p1 = -1,-1
+            print '|-deal with base=%s' % base
+            subNums = nums[base:] 
+            for i,v in enumerate(subNums):
+                if p0 < 0 and v < tar:
+                    p0 = base + i
+                    print '|--p0=%s'%p0
+                    p1 = tar - v 
+                elif v == p1:
+                    print '|-find index:base=%s' % base
+                    return [p0, base+i]
+            print '|-not find index:base=%s' % base
+        return [p0,p1]
+
 if __name__ == '__main__':
     mySolution = Solution()
-    nums = [2,10,7,5,8]
+    nums = [1,2,10,7,5,8]
     tar = 7
     indices = mySolution.getIndicesByTarget(nums,tar)
     if len(indices) == 2:
         print(indices)
     else:
         print('sory world!')
+    indices = mySolution.getIndicesByTarget2(nums,tar)
+    if len(indices) == 2:
+        print(indices)
+    else:
+        print('sory world again!')
 ```
 
 > TODO:Golang
