@@ -5,7 +5,7 @@ categories: blog
 tags: [go]
 ---
 
-> go语言和C很像，像到是有指针甚至是有函数指针和goto。符号首字母的大小写决定了给符号的可见性（比Fortran有进步😇），for有变强。
+> go语言和C很像，像到是有指针甚至到了有函数指针和goto的地步。符号首字母的大小写决定了符号的可见性（比Fortran有进步😇），for和c相比有变强，为什么多行字符串是`multiLinestring`呢。。。
 
 ## 定义变量和常量
 
