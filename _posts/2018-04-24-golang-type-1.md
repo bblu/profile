@@ -1,5 +1,5 @@
 ---
-title: Go Web编程-类型和控制
+title: 《Go Web编程》-类型和控制
 date: 2018-04-24 00:10
 categories: blog
 tags: [go]
@@ -62,8 +62,10 @@ const greeting = \`multi
 
 
 ### 操作技巧
+
 #### 字符串转可编辑的数组 
     c := []byte("hello")
+
 #### 分组声明
 ```go
 "大写开头的符号可以导出，小写符号是私有的"
@@ -81,6 +83,7 @@ const greeting = \`multi
         s string
     }
 ```
+
 #### iota枚举默认从0开始
 ```go
 "同一组常量声明省略类型则和前面一致"
@@ -92,6 +95,7 @@ cosnt{
 }
 
 ```
+
 #### for
 ```go
 for i < 10{
