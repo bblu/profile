@@ -74,7 +74,7 @@ INNER JOIN public.bookorder o ON o.book = b.id
 
 ```
 
-> if you user outer join the left or right Can not be ignored
+> if you use outer join the left or right Can not be ignored
 
 #### 3.2.RIGHT OUTER JOIN 
 ```sql
@@ -135,6 +135,7 @@ RIGHT JOIN public.customer c ON o.customer = c.id
 --"customer2";
 --"customer4";
 ```
+
 #### 4.2.left join use left table keys to join
 ```sql
 -- RITHT JOIN according to the rows in rear/RITHT table
