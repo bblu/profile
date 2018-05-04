@@ -121,6 +121,12 @@ func add(input1 int32,input2 int32) int{
 func subAdd(a int32,b int32) (sub int, add int){
     return a-b, a+b
 }
+
+func getIndicesByTarget(nums []int, leng int, tar int)(i0 int,i1 int){
+	for i:=0; i< leng-1; i++{
+	}
+	return -1, -1
+}
 ```
 #### defer栈 延迟执行一般用了确保资源被释放
 
