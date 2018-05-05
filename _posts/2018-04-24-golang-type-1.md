@@ -2,10 +2,10 @@
 title: 《Go Web编程》-类型和控制
 date: 2018-04-24 00:10
 categories: blog
-tags: [go]
+tags: [go, book]
 ---
 
-> go语言和C很像，像到是有指针甚至到了有函数指针和goto的地步。符号首字母的大小写决定了符号的可见性（比Fortran有进步😇），for和c相比有变强，为什么多行字符串是`multiLinestring`呢。。。
+> go语言和C很像，像到是有指针甚至到了有函数指针和goto的地步。符号首字母的大小写决定了符号的可见性（比Fortran有进步😇），for和c相比有变强，为什么多行字符串是\`multiLinestring\`呢。。。
 
 ## 定义变量和常量
 
