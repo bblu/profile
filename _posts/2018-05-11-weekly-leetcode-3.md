@@ -14,7 +14,7 @@ Given "abcabcbb", the answer is "abc", which the length is 3.
 Given "bbbbb", the answer is "b", with the length of 1.
 Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
-### C++
+### [C++](https://github.com/bblu/algocpp/tree/master/weeklyPractice)
 ```cpp
 #include <stdio.h>
 #include <string>
@@ -24,7 +24,25 @@ using namespace std;
 
 class Solution {
     public:
-    int lengthOfLongestSubstring(std::string s) {
+    int lengthOfLongestSubstring(std::string s){
+        //记录每个字符之前最大的起始位置(反向索引)
+        std::vector<int> preCharPos(255,-1);
+        int strLen = (int)s.length();
+        if (strLen < 2) return strLen;
+        int maxLen = 1;
+        int curPos = -1;
+        int prePos = 0;
+        for(int i = 0; i<strLen; i++){
+            prePos = preCharPos[s[i]];
+            curPos = std::max(curPos,prePos);
+            int curLen = i - curPos;
+            preCharPos[s[i]] = i;
+            maxLen = std::max(maxLen, curLen);
+        }
+        return maxLen;
+    };
+
+    int lengthOfLongestSubstring_old(std::string s) {
         this->s = s;
         int strlen =(int)s.length();
         if (strlen < 2) return strlen;
@@ -71,3 +89,30 @@ int main(){
     printf("longestsubstring len=%i\n", longest);
 }
 ```
+
+### [python](https://github.com/bblu/algopython/tree/master/weeklyPractice)
+```python
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        maxLen, curPos, charPos= 0, 0, {}
+        for idx, char in enumerate(s, 1):
+            if charPos.get(char, -1) >= curPos:
+                curPos = charPos[char]
+            charPos[char] = idx
+            maxLen = max(maxLen, idx - curPos)
+        return maxLen
+
+
+if __name__ == "__main__":
+    sol = Solution()
+    s = 'aabcdd'
+    l = sol.lengthOfLongestSubstring(s)
+    print l
+
+```
+
+### [go]()
