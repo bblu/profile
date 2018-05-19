@@ -4,7 +4,7 @@ date: 2018-05-18 20:00
 categories: blog
 tags: [opengl,book]
 ---
-> 变蓝的红宝书--OpenGL编程指南
+> 变蓝的红宝书--<<OpenGL编程指南>>
 
 ## 2.4.数据块接口
 ### 2.4.1.顶点着色器的主要功能是
