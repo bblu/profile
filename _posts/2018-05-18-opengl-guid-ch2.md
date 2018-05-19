@@ -50,7 +50,8 @@ tags: [opengl,book]
 > 总结起来就是两句话：两个创建两个绑定，编译链接然后使用。记住后后一句就可以了。
 
 ## 2.6.着色器子程序subroutine
-> 着色器子程序类似与C函数指针,
+> 着色器子程序类似与C函数指针
+
 ```glsl
 #version 330 core
 void func_one(){...}
