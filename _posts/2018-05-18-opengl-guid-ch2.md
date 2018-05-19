@@ -64,6 +64,7 @@ void main(){
         func_two();
 }
 ```
+
 ### 2.6.1.GLSL子程序设置
 1. 声明子程序 subroutine returnType subroutineType(type param, ...);
 2. 定义子程序 subroutine (subroutineType) returnType functionName(...);
@@ -81,6 +82,7 @@ subroutin (LightFunc) vec4 diffuse(vec3 n){
 //3
 subroutine uniform LightFunc materialShader;
 ```
+
 ### 2.6.2.Use subroutine
 > 在链接后的着色器程序查询不同subroutine在着色器中的索引（相当于函数地址）,然后把这个函数地址赋给第一步声明的函数指针，完成subroutine的选择。不同的是subroutine的uniform使用glGetSubroutineUniformLocation(pro,type,name)来获取。
 
