@@ -66,3 +66,35 @@ void main(){
 1. 声明子程序 subroutine returnType subroutineType(type param, ...);
 2. 定义子程序 subroutine (subroutineType) returnType functionName(...);
 3. 声明选择子 subroutine uniform subroutineType variableName;
+```glsl
+//1
+subroutine vec4 LightFunc(vec3);
+//2
+subroutine (LightFunc) vec4 ambient(vec3 n){
+    return Materials.ambient;
+}
+subroutin (LightFunc) vec4 diffuse(vec3 n){
+    return Materials.diffuse * max(dot(normailize(n),LightVec.xyz), 0.0);
+}
+//3
+subroutine uniform LightFunc materialShader;
+```
+### 2.6.2.Use subroutine
+> 在链接后的着色器程序查询不同subroutine在着色器中的索引（相当于函数地址）,然后把这个函数地址赋给第一步声明的函数指针，完成subroutine的选择。不同的是subroutine的uniform使用glGetSubroutineUniformLocation(pro,type,name)来获取。
+
+```glsl
+glUseProgram(program);
+//1.定位子程序uniform
+matShaderLoc = glGetSubroutineUniformLocation(program, GL_VERTEX_SHADER, "materialShader");
+//2.获得子程序索引
+ambIndex = glGetSubroutineIndex(program, GL_VERTEX_SHADER, "ambient");
+difIndex = glGetSubroutineIndex(program, GL_VERTEX_SHADER, "diffuse");
+
+GLsize n;
+glGetIntegerv(GL_MAX_SUBROUTINE_UINFORM_LOCATIONS, &n);
+GLuint *indices = new GLuint[n];
+indices[matShaderLoc] = ambIndex;
+//3.指定要执行的子程序
+glUniformSubroutinesuiv(GL_VETEX_SHADER, n, indices);
+delete [] indices;
+```
