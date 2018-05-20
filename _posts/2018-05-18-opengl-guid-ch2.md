@@ -1,5 +1,5 @@
 ---
-title: OpenGL4.5 Programming Guid V9 - Chapter II
+title: OpenGL Programming Guid - Chapter II SHADER
 date: 2018-05-18 20:00
 categories: blog
 tags: [opengl,book]

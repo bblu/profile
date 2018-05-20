@@ -8,6 +8,7 @@ tags: [opengl,book]
 
 ## 3.1.Primitive types
 GPU支持的基础图元有点像编程语言内置的基础类型可以直接用，对于图形硬件来能直接用的基础图元就是可以直接光栅化的图元。
+
 - Points,Lines,Trangles
 - LineStrip,LineLoop
 - TranglesStrip,TranglesFan
@@ -20,9 +21,9 @@ GPU支持的基础图元有点像编程语言内置的基础类型可以直接�
 
 ### 3.1.3 Trangles
 - 共享变不会裂隙/重复绘制
-- 渲染模式可选[POINT|LINE|FILL]
+- 渲染模式可选[POINT/LINE/FILL]
 - 多边形顶点顺序默认GL_CCW逆时针方向
-- 背面剪裁 glCullFace [FRONT|BACK]
+- 背面剪裁 glCullFace [FRONT/BACK]
 
 ## 3.2.缓存
 从缓存的名称上看，OpenGL的缓存可以看成和CUP缓存对cpu的作用，但是又不完全像因为渲染的效率依赖大量数据并行性执和cpu的超标量多流水还主要应付任务切换现场恢复有所不同，OpenGL的渲染任务不用来回切换不管固定也好可编程也罢都是同一个任务把栅格化的数据扔到真缓存里去。还有一点不一样是cpu的缓存对用户是透明的，从这点上看OpengGL的缓存像CPU的内存更合适啦🐶。
