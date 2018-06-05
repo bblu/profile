@@ -12,6 +12,7 @@ Mapbox Vector Tiles是一种现代化的存储和传输方式，你可以在shap
 ### 1.准备测试数据
 
 从【[opendatadownload](https://www.ordnancesurvey.co.uk/opendatadownload/products.html#OPMPLC)】下载免费数据。
+
 - 在National Grid Reference标签右侧的框中勾选下载列，然后向下滚动以从网格方块图旁边的列表中选择TQ和TR。滚动到页面的最底部，点击继续。如果是自己的数据记得修改后面地图的中心点坐标。参考分块目录下的metadata.json
 - 推到页面最底下点击【continue】
 - 填写个人信息，邮箱填好因为下载地址是要通过邮箱发送的，页面左下角有个人机交互认证check一下，点击【continue】继续。

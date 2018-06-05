@@ -93,9 +93,9 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : 
   foursquare       :
-  github           : bblu
+  github           : "bblu"
   google_plus      :
   keybase          :
   instagram        : 
@@ -106,7 +106,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "@luwenbo"
   vine             :
   weibo            : 
   xing             :
@@ -171,7 +171,7 @@ kramdown:
 
 # Outputting :categories/
 permalink: :year-:month-:day-:title.html
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
