@@ -1,18 +1,19 @@
 ---
-title: step into code of mongoose
-date: 2018-06-08
+title: step into connect code in mongoose
+date: 2018-06-08 18:00
 categories: blog
-tags: [nodejs,mongo]
+tags: [nodejs, mongo]
 ---
 
-## 1.dependency of packages
-* Mongoose is a [MongoDB](https://www.mongodb.org/) object modeling tool designed to work in an asynchronous environment.
+Mongoose is a [MongoDB](https://www.mongodb.org/) object modeling tool designed to work in an asynchronous environment.
+
+## dependency of packages
 * [MongoDB](https://www.mongodb.com/) : the official driver for Node.js
 * mongodb-core the low level api not for end users.
 
 The MongoDB Core driver is the low level part of the 2.0 or higher MongoDB driver and is meant for library developers not end users. 
 
-### 1.1.how to use mongoose
+### how to use mongoose
 
 ```js
 //Defines or retrieves a model.
@@ -23,33 +24,12 @@ var Ticket = db.model('Ticket', new Schema(..));
 var Venue = db.model('Venue');
 ```
 
-### 1.2.how to use MongoDB
-
-```js
-const MongoClient = require('mongodb').MongoClient;
-const assert = require('assert');
-
-// Connection URL
-const url = 'mongodb://localhost:27017';
-
-// Database Name
-const dbName = 'myproject';
-
-// Use connect method to connect to the server
-MongoClient.connect(url, function(err, client) {
-  assert.equal(null, err);
-  console.log("Connected successfully to server");
-  const db = client.db(dbName);
-  client.close();
-});
-```
-
-# 2.mongoose
+# mongoose
 
 First, we need to define a connection. If your app uses only one database, you should use `mongoose.connect`. 
 If you need to create additional connections, use `mongoose.createConnection`.
 
-## 2.1.index.js
+## index.js
 
 ```js
 //@return {Connection} the created Connection object. 
