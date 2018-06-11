@@ -18,7 +18,7 @@ ES6诞生以前， 异步编程的方法大概有下面4种。
 
 Generator：a thing that generates something, in particular.
 
-既然是发生器靠什么发生呢？是yield
+既然是发生器靠什么发生呢？是yield,那么什么是particular呢？就是yield的第二个意思见下文。
 
 ```js
 //generator
