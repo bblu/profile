@@ -25,10 +25,18 @@ AVL树是最先发明的**自平衡二叉查找树**。在AVL树中任何节点�
 
 红黑树是2-3-4树的一种等效树。换句话说，对于每个2-3-4树，都存在至少一个数据元素是同样次序的红黑树。在2-3-4树上的插入和删除操作也等同于在红黑树中颜色翻转和旋转。
 
-红黑树的三个特性:
-1. 首尾节点全黑：根节点和每个叶子节点（NIL）是黑色。
-4. 红节点子全黑：如果一个节点是红色的，则它的子节点必须是黑色的。
-5. 黑节点数相同：从一个节点到该节点的子孙节点的所有路径上包含相同数目的黑节点。
+**红黑树在原有的二叉查找树基础上增加了如下几个要求**
+
+* 1.Every node is either red or black.
+* 2.The root is black.
+* 3.Every leaf (NIL) is black.
+* 4.If a node is red, then both its children are black.
+* 5.For each node, all simple paths from the node to descendant leaves contain the same number of black nodes.
+
+**简单说红黑树满足三条**
+1. 首尾节点全黑：根节点和每个叶子节点（NIL）是黑色。[1.2.3]
+2. 红节点子全黑：如果一个节点是红色的，则它的子节点必须是黑色的。[4]
+3. 黑节点数相同：从一个节点到该节点的子孙节点的所有路径上包含相同数目的黑节点。[5]
 ```
 
             B80
