@@ -93,3 +93,4 @@ result.value.then(function(data){
 }).then(function(data){
     g.next(data);
 });
+```
