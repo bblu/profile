@@ -1,5 +1,5 @@
 ---
-title: 从零开始构建矢量块服务
+title: 从零开始构建矢量块服务[译]
 date: 2018-05-27 23:00
 categories: blog
 tags: [mapbox,pbf]
