@@ -17,7 +17,7 @@ tags: [network,note]
 |--------------------网卡-----------------|
 ```
 
-## 0.浏览器输入网址
+## 1.浏览器输入网址
 
 - URL：协议//web服务器/目录/文件
 - HTTP 1.1 Method：HEAD、GET、POST、PUT、DELETE、OPTIONS、TRACE、CONNECT
@@ -44,12 +44,15 @@ http版本+状态码+响应短语
 
 - 浏览器使用Socket库中的DN解析器(gethostbyname)向DNS发UDP消息查询IP  
 - 域名记录：
+
+```
 ---
-|DomainName：|bblu.tk  
-|Class：|IN[只剩这一直类型]   
-|Type：|Address|MaileXchange  
-|Data：|167.211.34.1|10 mail.163.com  
+|Domain:|bblu.tk  
+| Class:|IN[只剩这一个类型]   
+| Type: |Address|MaileXchange  
+| Data: |167.211.34.1|10 mail.163.com  
 ---
+```
 ps:网络层依靠ARP协议IP->MAC
 
 ## 2.浏览器交给系统的协议栈
@@ -111,17 +114,15 @@ IP协议根据IP地址查找包的传输方向，即下一个路由器的位置�
 - 发送帧使用集线器的半双工模式或交换机的全双工模式。接收方先用FCS做有效检查再比对MAC地址如果不一致将丢掉，相同就将包放入缓冲区由网卡发起一个中断通知CPU，CPU告诉在对应中断号注册的网卡驱动的中断处理程序去取包进行下一步操作，类型是0x0080的包给TCP/IP协议栈，0x809B的包给AppleTalk的协议栈。
 - 进入TCP/IP后如果发现IP地址错误IP模块会通过ICMP消息通知发送方，但是有网络转发功能的服务器会转发包。
 
- ```bash
- 主要的ICMP消息  
- 类型：描述
- 0：EchoReply
- 3: DestinationUnreachable
- 4: Source Quench路由器负载报警
- 5: Redirect 包的出入口相同告诉发送方下一个路由让它直接发过去
- 8: Echo Ping命令发送的消息，接收方返回一个EchoReply
- 11: TimeExeccded 超过IP头部的TTL被丢弃通知发送方
- 12:IP头错误被丢弃
- ```
+ **主要的ICMP消息**  
+ 类型：描述  
+ 0：EchoReply  
+ 3: DestinationUnreachable  
+ 4: Source Quench路由器负载报警  
+ 5: Redirect 包的出入口相同告诉发送方下一个路由让它直接发过去  
+ 8: Echo Ping命令发送的消息，接收方返回一个EchoReply  
+ 11: TimeExeccded 超过IP头部的TTL被丢弃通知发送方  
+ 12:IP头错误被丢弃  
 
 - IP协议里接收到开启分片的包还要分片重组
 - PromiscuousMode混杂模式下网卡不检查接收方MAC地址照单全收。
