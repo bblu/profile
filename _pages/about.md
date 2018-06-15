@@ -7,7 +7,11 @@ title: "About"
 {% include base_path %}
 
 ## profile
-technology roadmap for 10 years
+technology roadmap for 10 years.
+
+gis专业10年从业经验经历了gis行业从开始栅格二维迈向三维又到现在的矢量二三维的发展历程，编程语言也从c++到php到现在的node和go，没有正式用过java。
+小公司工作内容比较杂，最早项目开发然后优化引擎做三维平台的工作比较多涉及一些图形算法，然后还有一些数据库和服务的开发和过程管理以及CI的一些东西。
+自学python做一些数据处理的工作，爱好电路和硬件自学linux下的开发，有空玩一玩单片机和树莓派。最近学习go。 
 
 ## 技能清单
 
@@ -15,12 +19,10 @@ technology roadmap for 10 years
 - 开发语言：C/C++/C#/PHP/python/Javascript
 - 三维引擎：wordwind/osg/osgEarth/Delta3D/ogre
 - Web开发：JS/PHP/NodeJS/XML/JSON/CSS/HTML
-- Web框架：zentaoPHP/Express/leaflet
-- 数据库软件：SQLite/Orical/MySQL/PgSQL/PostGIS/MongoDB
-- 前端框架和工具：VUE/npm/Grunt/webpack
-- 测试框架和工具：cppUnit/Macha/SoapUI/postMan
-- 版本管理和CI：svn/git/gitLab/Jenkins
-- GIS服务相关：WFS/WMS/投影/配准/地理编码
+- Web框架：zentaoPHP/Express/leaflet/mapbox
+- 数据库：SQLite/Orical/MySQL/PgSQL/PostGIS/MongoDB
+- 版本管理：svn/git/gitLab/Jenkins
+- GIS服务：WFS/WMS/投影/配准/地理编码和矢量切块
 - 行业软件：ArcMap/QGIS/uDig/globalMapper/gdal
 - 工具软件：Xmind/autoCAD/PS/3dsMax
 
