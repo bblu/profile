@@ -1,5 +1,5 @@
 ---
-title: 《OpenGl编程指南》- Xcode开发第一个程序
+title: 《OpenGl Programming Guide》- first program in Xcode
 date: 2018-06-16 16:00
 categories: blog
 tags: [opengl, xcode]
