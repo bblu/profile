@@ -93,6 +93,9 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
-### what u see it a triangle
+### what u see will be a triangle like this
 
 ![trianglse](../assets/in-post/2018-06-16-glsl-xcode-triangle.png)
+
+
+#### code:[https://github.com/bblu/openglcpp](https://github.com/bblu/openglcpp/tree/master/helloworld)
