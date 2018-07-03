@@ -99,3 +99,20 @@ int main(int argc, const char * argv[]) {
 
 
 #### code:[https://github.com/bblu/openglcpp](https://github.com/bblu/openglcpp/tree/master/helloworld)
+
+> ps:OpenGL和GLUT作为Framework，都在/System/Library/Frameworks下。
+```cpp
+//在程序里 唯一需要注意的是include的头文件。 
+//Windows提供了OpenGL和GLU，如果用GLUT，得自己去装一个。
+//Windows下的头文件使用方式一般是 
+#include <Windows.h> 
+#include <GL/gl.h> 
+#include <GL/glu.h> 
+//#include "GLUT/glut.h" 
+//depends on where you put GLUT 
+
+//而在Mac OS X下，一般是 
+#include <OpenGL/gl.h> 
+#include <OpenGL/glu.h> 
+#include <GLUT/glut.h> 
+```
