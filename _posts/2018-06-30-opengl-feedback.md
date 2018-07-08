@@ -19,7 +19,7 @@ Transform Feedback要干的事就是重新捕获即将装配成图元（primitiv
 
 这个东西正好在整个Pipeline的中间，往细了说略微偏上。
 
-![feedback](../assert/in-pose/2018-06-30-opengl-feedback.png)
+![feedback](../assets/in-post/2018-06-30-opengl-feedback.png)
 
 ### 3.why we need TF
 

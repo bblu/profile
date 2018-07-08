@@ -6,4 +6,4 @@ tags: [jvm, java]
 ---
 there is nothing but a map for class file format
 
-![class file format](../assert/in-pose/2018-07-08-jvms8-4-structure.svg)
+![class file format](../assets/in-post/2018-07-08-jvms8-4-structure.svg)
