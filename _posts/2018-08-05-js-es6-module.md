@@ -42,6 +42,3 @@ import 'bar'
 ### Node加载模块
 
 they're clear as what they look down below.
-
-
-![api-time-diff](../assets/in-post/2018-07-23-restfull-api.JPG)
