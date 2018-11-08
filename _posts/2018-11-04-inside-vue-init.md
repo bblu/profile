@@ -33,6 +33,9 @@ tags: [VUE, web]
 <div id="app-2">
   <p v-if="seen">2：现在你看到我了</p>
   <p v-else>2:</p>
+  in another way...
+  <p v-if="Math.random() > 0.5">Now you see me</p>
+  <p v-else>Now you don't</p>
 </div>
 
 <div id="app-3">
@@ -192,6 +195,98 @@ var app = new Vue({
   lastName: function(val){this.fullName = this.firstName + ' ' + val }
   }
 })
+</script>
+
+</html>
+```
+
+#### 
+```html
+<html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<body>
+<div id="app">
+  {{ msg }}
+</div>
+<br/>
+<div id="components-demo">
+  <button-counter></button-counter>
+</div>
+
+<div id="blog-post-demo">
+ <h2>Passing Data to Child Components with Props</h2>
+	<blog-post title="My journey with Vue"></blog-post>
+	<blog-post title="Blogging with Vue"></blog-post>
+	<blog-post title="Why Vue is so fun"></blog-post>
+
+<br>in another way...</br>
+
+<blog-post
+  v-for="post in posts"
+  v-bind:key="post.id"
+  v-bind:title="post.title"
+></blog-post>
+
+</div>
+
+<div id="alert-box-demo">
+<alert-box>
+  Something bad happened.
+</alert-box>
+</div>
+
+#Dynamic Components
+<component v-bind:is="currentTabComponent"></component>
+
+</body>
+
+<script>
+// Define a new component called button-counter
+Vue.component('button-counter', {
+  data: function () {
+    return {
+      count: 0
+    }
+  },
+  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+})
+new Vue({ el: '#components-demo' })
+
+Vue.component('blog-post', {
+  props: ['title'],
+  template: '<h3>{{ title }}</h3>'
+})
+new Vue({
+  el: '#blog-post-demo',
+  data: {
+    posts: [
+      { id: 1, title: 'My journey with Vue' },
+      { id: 2, title: 'Blogging with Vue' },
+      { id: 3, title: 'Why Vue is so fun' }
+    ]
+  }
+})
+
+
+Vue.component('alert-box', {
+  template: `
+    <div class='demo-alert-box'>
+      <strong>Error!</strong>
+      <slot></slot>
+    </div>
+  `
+})
+new Vue({ el: '#alert-box-demo' })
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    msg: 'components-demo'
+  }
+})
+
 </script>
 
 </html>
