@@ -1,6 +1,6 @@
 ---
-title: VUE - initialization and DynamicData
-date: 2018-11-04 17:00
+title: internatinalize vue-admin-template
+date: 2018-11-24 17:00
 categories: blog
 tags: [VUE, web]
 ---
