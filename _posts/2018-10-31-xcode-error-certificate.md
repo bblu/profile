@@ -5,7 +5,7 @@ categories: blog
 tags: [xcode, ios]
 ---
 
-xcod调试程序的时候iPhone无法验证开发者应用，虽然点击了很多次切换流量尝试在设置里验证也没有效果。
+xcode调试程序的时候iPhone无法验证开发者应用，虽然点击了很多次切换流量尝试在设置里验证也没有效果。
 
 ### so how to Refresh provisioning profile devices?
 
