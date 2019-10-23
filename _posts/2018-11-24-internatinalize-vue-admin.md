@@ -11,7 +11,7 @@ An admin framework will be ok for a flying control project. I found the [vue-ele
 
 * 1 install vue-i18n & vue.use(i18n) & enable this.$i18n
 * 2 link to vuex.store.getters & store language to Cookies.language
-* 3 translate files zh.js|en.js & initialize VueI18n
+* 3 translate files zh.js\|en.js & initialize VueI18n
 * 4 make object symbols fit for translate {{ $t(objTitle) }}
 * 5 find the function translatedTitle(title) for titles in router views
 

@@ -9,18 +9,18 @@ title: "About"
 ## profile
 technology roadmap for 10 years.
 
-gis专业算是一直专业对口的工作，10年从业经历了gis行业从开始二维栅格迈向三维又到现在的矢量二三维的发展历程，编程语言也从c++到php到现在的node和go。
+gis专业一直从事对口的工作，10+年从业经历了gis行业从开始二维栅格迈向三维又到现在的矢量二三维的发展历程，编程语言也从c++到.Net到的node、VUE然后到java，中间也用过PHP，Python，有好玩的语言也尝试一下比如swift、lisp。工作环境也从Windows和Linux切换到MacOS。
 
-小公司工作内容比较杂，最早项目开发然后优化引擎做三维平台的工作比较多涉及一些图形算法，然后还有一些数据库和pass平台服务的开发和过程管理以及CI的一些东西。
+工作内容最早项目开发然后优化引擎做三维平台的工作比较多涉及一些图形算法，然后数据库空间的非空间的，sql的NoSql的都摸过，RestFull服务的设计开发还行，过程管理以及CI的一些东西都部署使用优化过。用spring后感觉搞Node就是浪费生命，反正我之前写的Nodejs代码是不想看了，但是springBoot的那些包和Node_models是一个德行都很反感。反正能用docker解决的尽量用docker。
 
-自学python做一些数据处理的工作，爱好电路和硬件自学linux下的开发，有空玩一玩单片机和树莓派。
+用python做一些数据处理的工作，爱好电路和硬件自学linux下的开发，有空玩一玩单片机和树莓派，买的书一半是编程的另一半是计算机原理接口技术和操作系统的，从POST到bootloader，从键盘输入到系统中断，从寄存器到缓存再到分页内存，从死的磁盘程序到活的内存进程，从显卡到渲染到屏幕的显示都有了解。
 
 ## 技能清单
 
 - 通用技能：SSH/SCP/vim/shell/github/docker
-- 开发语言：C/C++/C#/PHP/python/Javascript
+- 开发语言：C/C++/QT/C#/PHP/python/Javascript
 - 三维引擎：wordwind/osg/osgEarth/Delta3D/ogre
-- Web开发：JS/PHP/NodeJS/XML/JSON/CSS/HTML
+- Web开发：JS/PHP/NodeJS/XML/JSON/CSS/HTML（一般）
 - Web框架：zentaoPHP/Express/leaflet/mapbox
 - 数据库：SQLite/Orical/MySQL/PgSQL/PostGIS/MongoDB
 - 版本管理：svn/git/gitLab/Jenkins
@@ -46,4 +46,3 @@ https://bblu.github.io/2017-01-17-android-medical-app.html
  http://bblu.github.io/2016-05-06-leetcode-in-cpp.html
 
 # 软件设计师资格证书
-> 2016年下半年通过
