@@ -18,18 +18,18 @@ gis专业一直从事对口的工作，10+年从业经历了gis行业从开始�
 ## 技能清单
 
 - 通用技能：SSH/SCP/vim/shell/github/docker
-- 开发语言：C/C++/QT/C#/PHP/python/Javascript
+- 开发语言：C/C++/QT/C#/PHP/python/Javascript/java
 - 三维引擎：wordwind/osg/osgEarth/Delta3D/ogre
 - Web开发：JS/PHP/NodeJS/XML/JSON/CSS/HTML（一般）
 - Web框架：zentaoPHP/Express/leaflet/mapbox
-- 数据库：SQLite/Orical/MySQL/PgSQL/PostGIS/MongoDB
+- 数据库：SQLite/Orical/MySQL/PostGIS/MongoDB
 - 版本管理：svn/git/gitLab/Jenkins
 - GIS服务：WFS/WMS/投影/配准/地理编码和矢量切块
 - 行业软件：ArcMap/QGIS/uDig/globalMapper/gdal
 - 工具软件：Xmind/autoCAD/PS/3dsMax
 
 # 业余项目和作品
-- [ios时间管理app](https://bblu.github.io/2018-03-19-swift-timepie-5rd.html) 用了多年的谷歌日历比较繁琐，之后尝试过很多其他的日程工具都不适用主要是不方便，于是决定自己做一个。五天的业余时间这个项目原型已经完成，可以记录日程并上传到个人服务器上，目前在用spring boot重写服务端代码。  
+- [ios时间管理app](https://bblu.github.io/2018-03-19-swift-timepie-5rd.html) 用了多年的谷歌日历比较繁琐，之后尝试过很多其他的日程工具都不适用主要是不方便，于是决定自己做一个。五天的业余时间这个项目原型已经完成，可以记录日程并上传到个人服务器上,符合条件到同步到苹果日历，目前在用spring boot重写服务端代码。  
  https://bblu.github.io/2018-03-19-swift-timepie-5rd.html
 - [Python脚本集](https://bblu.github.io/2016-02-18-how-to-python.html)：编码示例，网络爬虫和一些算法实现。
  https://github.com/bblu/algopython

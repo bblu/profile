@@ -93,7 +93,7 @@ Great! Now that we have our first ip address and we know that we have 16 ip addr
 ### 4.路由 traceroute
  在linux主机系统下：traceroute hostname  
  而在Windows系统下：tracert hostname
- 
+
  ```
  macbook:profile bblu$ traceroute www.163.com
 traceroute: Warning: www.163.com has multiple addresses; using 116.199.2.84
@@ -109,6 +109,51 @@ traceroute to z163ipv6.v.bsgslb.cn (116.199.2.84), 64 hops max, 52 byte packets
  9  116.199.2.84 (116.199.2.84)  10.590 ms !Z  18.942 ms !Z  8.317 ms !Z
 macbook:profile bblu$ 
  ```
- 
+
  Reference [A Comprehensive Look at
 Subnetting, Gateways, and IP Ranges](https://portforward.com/networking/subnetting.htm)
+
+### 5.双网卡上内外网静态路由配置
+
+### 5.1 查看路由表：
+```shell
+bblu@MacBook assets % netstat -rn
+Routing tables
+
+Internet:
+Destination        Gateway            Flags        Netif Expire
+default            172.23.8.254       UGSc           en0       
+10.37.129/24       link#15            UC           vnic1      !
+10.211.55/24       link#14            UC           vnic0      !
+127                127.0.0.1          UCS            lo0       
+127.0.0.1          127.0.0.1          UH             lo0       
+```
+
+### 5.2 删除默认内网路由
+
+```js
+bblu@MacBook ~ % route get 0.0.0.0
+   route to: default
+destination: default
+       mask: default
+    gateway: 172.23.8.254
+  interface: en4
+      flags: <UP,GATEWAY,DONE,STATIC,PRCLONING>
+ recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+       0         0         0         0         0         0      1500         0 
+bblu@MacBook ~ % route -n delete default 192.168.1.254
+
+```
+
+### 5.3 添加默认外网路由
+
+```js
+route add -net 0.0.0.0 192.168.1.1
+```
+
+### 5.4 添加内网路由
+
+```
+route add -net 172.23.2.0 172.23.8.254
+```
+

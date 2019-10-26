@@ -54,6 +54,11 @@ feature_row:
     title: "树莓派+三八译码器"
     excerpt: "2017年1月为做电子琴提示灯做技术验证，最后成功实现了三片译码器级联。"
     url: "/2017-01-07-rasp-pi-midi.html"
+  - image_path: ../assets/in-post/2019-07-26-vue-spirng.png
+    alt: "Electron-VUE-SpringBoot"
+    title: "Potree show pointcloud"
+    excerpt: "前端vue框架后端spingboot全栈开发"
+    url: "https://github.com/bblu/vuejs/tree/master/admin_eletron"
 ---
 
 {% include feature_row id="intro" type="center" %}
